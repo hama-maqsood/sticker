@@ -1,7 +1,6 @@
 import os
 import cv2
 from typing import Dict, List, Union
-from html import escape
 import ffmpeg
 
 from telegram import MAX_MESSAGE_LENGTH, Bot, InlineKeyboardButton, ParseMode
