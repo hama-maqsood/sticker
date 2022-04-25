@@ -1,7 +1,7 @@
 {
   "name": "Tg_Video_sticker_converter",
   "description": "normal bot",
-  "repository": "https://github.com/hama-maqsood/sticker",
+  "repository": "https://github.com/hama-maqsood/st",
   "buildpacks": [
     {
       "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
@@ -10,4 +10,10 @@
       "url": "heroku/python"
     }
     ],
+  "env":{
+    "B": {
+      "description": "Bot token from @BotFather",
+      "required": true
+    }
+  }
 }
