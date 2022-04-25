@@ -185,7 +185,7 @@ def kang(update: Update, context: CallbackContext):
     user = update.effective_user
     args = context.args
     packnum = 0
-    packname = "a" + str(user.id) + "_by_" + context.bot.username
+    packname = "k" + str(user.id) + "_by_" + context.bot.username
     packname_found = 0
     max_stickers = 120
     while packname_found == 0:
@@ -194,7 +194,7 @@ def kang(update: Update, context: CallbackContext):
             if len(stickerset.stickers) >= max_stickers:
                 packnum += 1
                 packname = (
-                    "a"
+                    "k"
                     + str(packnum)
                     + "_"
                     + str(user.id)
@@ -330,7 +330,7 @@ def kang(update: Update, context: CallbackContext):
                 print(e)
 
         elif is_animated:
-            packname = "aa" + str(user.id) + "_by_" + context.bot.username
+            packname = "tt" + str(user.id) + "_by_" + context.bot.username
             packname_found = 0
             max_stickers = 50
             while packname_found == 0:
@@ -339,7 +339,7 @@ def kang(update: Update, context: CallbackContext):
                     if len(stickerset.stickers) >= max_stickers:
                         packnum += 1
                         packname = (
-                            "aa"
+                            "tt"
                             + str(packnum)
                             + "_"
                             + str(user.id)
@@ -389,7 +389,7 @@ def kang(update: Update, context: CallbackContext):
                 print(e)
 
         elif is_video or is_gif:
-            packname = "video" + str(user.id) + "_by_" + context.bot.username
+            packname = "vv" + str(user.id) + "_by_" + context.bot.username
             packname_found = 0
             max_stickers = 120
 
@@ -399,7 +399,7 @@ def kang(update: Update, context: CallbackContext):
                     if len(stickerset.stickers) >= max_stickers:
                         packnum += 1
                         packname = (
-                            "aa"
+                            "vv"
                             + str(packnum)
                             + "_"
                             + str(user.id)
@@ -541,7 +541,7 @@ def kang(update: Update, context: CallbackContext):
     else:
         packs = "تکایە وەڵامی ستیکەرێک بدەوە، یان وێنە یان گیف بۆ ئەوەی کەنگ بکات!\nئۆه، هەرچۆنێک بێت لێرە پاکەتەکانتن:\n"
         if packnum > 0:
-            firstpackname = "a" + str(user.id) + "_by_" + context.bot.username
+            firstpackname = "k" + str(user.id) + "_by_" + context.bot.username
             for i in range(0, packnum + 1):
                 if i == 0:
                     packs += f"[pack](t.me/addstickers/{firstpackname})\n"
