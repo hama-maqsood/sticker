@@ -1,5 +1,13 @@
 {
-      "name": "Sticker",
-      "description": "Ahello.",
-      "repository": "https://github.com/hama-maqsood/sticker",
+  "name": "Tg_Video_sticker_converter",
+  "description": "normal bot",
+  "repository": "https://github.com/hama-maqsood/sticker",
+  "buildpacks": [
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+    },
+    {
+      "url": "heroku/python"
+    }
+    ],
 }
